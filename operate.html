@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-Brand Asset Maker (BAM) operating screen by HueGrid Studio, v1.0.0, contract 1.6, 2026-10-28.
+Brand Asset Maker (BAM) operating screen by HueGrid Studio, v1.0.0, contract 1.7, 2026-11-16.
 author: HueGrid Studio
 license: CC-BY-NC-SA-4.0
 Bundled: React (MIT), Radix UI (MIT), IBM Plex Sans (SIL Open Font License 1.1).
@@ -294,6 +294,10 @@ html, body { margin: 0; background: transparent; }
   object-fit: cover;
   object-position: var(--pg-focal-x, 50%) var(--pg-focal-y, 50%);
 }
+
+/* Emphasis (1.7, additive): a slot whose schema sets "emphasis" turns *word* in the row into <em class="pg-em">. By
+   default it keeps the slot's face and style and takes the accent text colour; a layout may restyle it (an italic). */
+.pg-em { font-style: inherit; font-weight: inherit; color: var(--pg-accent-text); }
 
 /* Accent bar */
 .pg-bar { width: 0.4cqi; background: var(--pg-accent); border-radius: var(--brand-radius); }
